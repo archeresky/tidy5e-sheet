@@ -112,9 +112,9 @@
             {{#if @root.isCharacter}}
             <div class="item-detail item-weight" title="{{localize 'DND5E.Weight'}}: {{ item.system.weight }} {{ @root.weightUnit }}">
               {{#if ctx.totalWeight}}
-                  {{ ctx.totalWeight }} {{ @root.weightUnit }}
-              {{ else }}
-                  {{ item.system.weight }} {{ @root.weightUnit }}
+                {{ ctx.totalWeight }}
+              {{else}}
+                <div>-</div>
               {{/if}}
             </div>
             {{/if}}

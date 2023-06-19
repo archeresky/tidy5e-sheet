@@ -2882,6 +2882,7 @@
 	-ms-flex-align: center;
 	align-items: center;
 	font-size: 12px;
+	padding-right: 12px;
 }
 .tidy5e.sheet.actor .spellcasting-ability h3 {
 	margin-right: 10px;
@@ -3417,7 +3418,8 @@
 	font-size: 12px;
 	line-height: 16px;
 	text-align: center;
-	margin-right: 4px;
+	margin-right: 10px;
+	margin-right: 10px;
 	color: var(--t5e-secondary-color);
 }
 .tidy5e.sheet.actor .items-list .item-state-icon.not-attuned {
@@ -3643,10 +3645,16 @@
 	color: var(--t5e-secondary-color);
 	overflow: hidden;
 }
-.tidy5e.sheet.actor .list-layout .items-list .item-detail.no-border {
-	border-left-color: transparent;
+/*.tidy5e.sheet.actor .list-layout .items-list .item-detail.no-border {
+	border-left-color: transparent !important;
+}*/
+.tidy5e.sheet.actor .list-layout .items-list .item-detail.attunement {
+	border-left: none !important;
+	border-left-color: transparent !important;
+	border: none !important;
 }
 .tidy5e.sheet.actor .list-layout .items-list .item-detail span.truncate {
+	border-left: none !important;
 	padding: 0 4px;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -4649,13 +4657,10 @@ form .form-group.spell-lvl-btn .form-fields .spell-lvl-btn__label .available-slo
 	-ms-flex-pack: center;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 2px;
-	margin-top: 3px;
-	font-size: 25px;
 }
 .tidy5e.sheet.actor.npc .counters .counter input {
-	min-width: 30px;
-	max-width: 50px;
+	min-width: 15px;
+	max-width: 15px;
 }
 .tidy5e.sheet.actor.npc .counters .counter input[type="text"]:first-of-type {
 	text-align: right;
@@ -4787,6 +4792,7 @@ form .form-group.spell-lvl-btn .form-fields .spell-lvl-btn__label .available-slo
 	bottom: 0;
 	background: url("../../../systems/dnd5e/ui/parchment.jpg") repeat;
 	background-attachment: fixed;
+	padding-right: 20px;
 }
 .tidy5e.sheet.actor.npc .spellcasting-ability .spell-dc {
 	-webkit-box-flex: 1;
