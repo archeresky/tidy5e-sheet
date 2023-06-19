@@ -107,7 +107,7 @@
 	"manifestPlusVersion": "1.2.1",
 	"url": "https://github.com/archeresky/tidy5e-sheet",
 	"manifest": "https://raw.githubusercontent.com/archeresky/tidy5e-sheet/master/src/module.json",
-	"download": "https://github.com/archeresky/tidy5e-sheet/releases/latest/download/module.zip",
+	"download": "https://raw.githubusercontent.com/archeresky/tidy5e-sheet/master/src/module.json",
 	"readme": "https://github.com/sdenec/tidy5e-sheet/blob/master/README.md",
 	"changelog": "https://github.com/sdenec/tidy5e-sheet/blob/master/changelog.md",
 	"bugs": "https://github.com/sdenec/tidy5e-sheet/issues",
