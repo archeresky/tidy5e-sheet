@@ -28,7 +28,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorScheme", {
 		name: `${game.i18n.localize("TIDY5E.Settings.SheetTheme.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.SheetTheme.hint"),
-		scope: "client",
+		scope: "global",
 		config: true,
 		type: String,
 		choices: {
@@ -52,7 +52,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "rightClickDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.RightClickDisabled.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.RightClickDisabled.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -62,7 +62,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "classicControlsEnabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ClassicControls.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.ClassicControls.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: true,
 		type: Boolean
@@ -71,7 +71,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hideIconsNextToTheItemName", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HideIconsNextToTheItemName.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HideIconsNextToTheItemName.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -81,7 +81,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "itemCardsForAllItems", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ItemCardsForAllItems.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.ItemCardsForAllItems.hint"),
-		scope: "client",
+		scope: "global",
 		config: true,
 		default: true,
 		type: Boolean
@@ -99,7 +99,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "itemCardsAreFloating", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ItemCardsAreFloating.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.ItemCardsAreFloating.hint"),
-		scope: "client",
+		scope: "global",
 		config: true,
 		default: false,
 		type: Boolean
@@ -108,7 +108,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "itemCardsDelay", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ItemCardsDelay.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.ItemCardsDelay.hint"),
-		scope: "client",
+		scope: "global",
 		config: true,
 		default: 300,
 		type: Number
@@ -149,7 +149,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "journalTabDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.JournalTab.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.JournalTab.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -158,7 +158,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "journalTabNPCDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.JournalTabNPCDisabled.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.JournalTabNPCDisabled.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -167,7 +167,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "classListDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ClassList.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.ClassList.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -176,7 +176,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "inspirationAnimationDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.InspirationAnimation.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.InspirationAnimation.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -185,7 +185,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hideIfZero", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HideIfZero.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HideIfZero.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -194,7 +194,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "inspirationOnHover", {
 		name: `${game.i18n.localize("TIDY5E.Settings.InspirationOnHover.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.InspirationOnHover.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -203,7 +203,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "exhaustionOnHover", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ExhaustionOnHover.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.ExhaustionOnHover.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -212,7 +212,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hpBarDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HpBar.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HpBar.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -221,7 +221,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hpOverlayDisabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HpOverlay.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HpOverlay.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -230,7 +230,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "traitsTogglePc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.TraitsTogglePc.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.TraitsTogglePc.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -239,7 +239,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "traitsMovedBelowResource", {
 		name: `${game.i18n.localize("TIDY5E.Settings.TraitsMovedBelowResource.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.TraitsMovedBelowResource.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -248,7 +248,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "ammoEquippedOnly", {
 		name: `${game.i18n.localize("TIDY5E.Settings.AmmoEquippedOnly.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.AmmoEquippedOnly.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -259,7 +259,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "traitsMovedBelowResourceNpc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.TraitsMovedBelowResource.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.TraitsMovedBelowResource.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -268,7 +268,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hpBarDisabledNpc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HpBar.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HpBar.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -277,7 +277,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hpOverlayDisabledNpc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HpOverlay.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HpOverlay.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -286,7 +286,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "traitsAlwaysShownNpc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.TraitsAlwaysShown.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.TraitsAlwaysShown.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -295,7 +295,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "skillsAlwaysShownNpc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.SkillsAlwaysShown.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.SkillsAlwaysShown.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -304,7 +304,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hideSpellbookTabNpc", {
 		name: `${game.i18n.localize("TIDY5E.Settings.SkillsAlwaysShown.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.SkillsAlwaysShown.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -315,7 +315,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hpBarDisabledVehicle", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HpBar.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HpBar.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -324,7 +324,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "hpOverlayDisabledVehicle", {
 		name: `${game.i18n.localize("TIDY5E.Settings.HpOverlay.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.HpOverlay.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -619,7 +619,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "enableActionListOnFavoritePanel", {
 		name: `${game.i18n.localize("TIDY5E.Settings.EnableActionListOnFavoritePanel.name")}`,
 		hint: game.i18n.localize("TIDY5E.Settings.EnableActionListOnFavoritePanel.hint"),
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -649,7 +649,7 @@ export function settingsList() {
 
 	game.settings.register(CONSTANTS.MODULE_ID, "playerSheetWidth", {
 		name: `${game.i18n.localize("TIDY5E.Settings.playerSheetWidth")}`,
-		scope: "client",
+		scope: "global",
 		config: false,
 		type: Number,
 		default: 740
@@ -659,7 +659,7 @@ export function settingsList() {
 
 	game.settings.register(CONSTANTS.MODULE_ID, "npsSheetWidth", {
 		name: `${game.i18n.localize("TIDY5E.Settings.npsSheetWidth")}`,
-		scope: "client",
+		scope: "global",
 		config: false,
 		type: Number,
 		default: 740
@@ -669,7 +669,7 @@ export function settingsList() {
 
 	game.settings.register(CONSTANTS.MODULE_ID, "vehicleSheetWidth", {
 		name: `${game.i18n.localize("TIDY5E.Settings.vehicleSheetWidth")}`,
-		scope: "client",
+		scope: "global",
 		config: false,
 		type: Number,
 		default: 740
@@ -823,7 +823,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "spellClassFilterSelect", {
 		name: `${game.i18n.localize("TIDY5E.Settings.SpellClassFilterSelect.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.SpellClassFilterSelect.hint")}`,
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -832,7 +832,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "spellClassFilterIconReplace", {
 		name: `${game.i18n.localize("TIDY5E.Settings.SpellClassFilterIconReplace.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.SpellClassFilterIconReplace.hint")}`,
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: false,
 		type: Boolean
@@ -841,7 +841,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "spellClassFilterAdditionalClasses", {
 		name: `${game.i18n.localize("TIDY5E.Settings.SpellClassFilterAdditionalClasses.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.SpellClassFilterAdditionalClasses.hint")}`,
-		scope: "client",
+		scope: "global",
 		config: false,
 		default: "",
 		type: String
@@ -895,7 +895,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerEnabled", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEnabled.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEnabled.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: Boolean,
 		default: false,
 		config: false
@@ -908,7 +908,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerEquipped", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEquipped.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEquipped.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(50, 205, 50, 0.3),
 		config: false
@@ -916,7 +916,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerEquippedOutline", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEquippedOutline.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEquippedOutline.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(50, 205, 50, 1),
 		config: false
@@ -924,7 +924,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerEquippedAccent", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEquippedAccent.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerEquippedAccent.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(173, 255, 47, 1),
 		config: false
@@ -937,7 +937,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerPrepared", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPrepared.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPrepared.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(50, 205, 50, 0.3),
 		config: false
@@ -945,7 +945,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerPreparedOutline", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPreparedOutline.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPreparedOutline.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(50, 205, 50, 1),
 		config: false
@@ -953,7 +953,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerPreparedAccent", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPreparedAccent.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPreparedAccent.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(173, 255, 47, 1),
 		config: false
@@ -966,7 +966,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerPact", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPact.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPact.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(250, 0, 180, 0.3),
 		config: false
@@ -974,7 +974,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerPactOutline", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPactOutline.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPactOutline.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(250, 50, 213, 1),
 		config: false
@@ -982,7 +982,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerPactAccent", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPactAccent.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerPactAccent.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(198, 119, 193, 1),
 		config: false
@@ -995,7 +995,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerAtWill", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAtWill.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAtWill.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(226, 246, 4, 0.3),
 		config: false
@@ -1003,7 +1003,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerAtWillOutline", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAtWillOutline.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAtWillOutline.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(163, 165, 50, 1),
 		config: false
@@ -1011,7 +1011,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerAtWillAccent", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAtWillAccent.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAtWillAccent.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(255, 242, 0, 1),
 		config: false
@@ -1024,7 +1024,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerInnate", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerInnate.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerInnate.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(255, 0, 0, 0.3),
 		config: false
@@ -1032,7 +1032,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerInnateOutline", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerInnateOutline.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerInnateOutline.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(231, 23, 23, 1),
 		config: false
@@ -1040,7 +1040,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerInnateAccent", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerInnateAccent.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerInnateAccent.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(195, 69, 69, 1),
 		config: false
@@ -1053,7 +1053,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerAlwaysPrepared", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAlwaysPrepared.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAlwaysPrepared.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(0, 0, 255, 0.15),
 		config: false
@@ -1061,7 +1061,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerAlwaysPreparedOutline", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAlwaysPreparedOutline.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAlwaysPreparedOutline.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(65, 105, 225, 1),
 		config: false
@@ -1069,7 +1069,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "colorPickerAlwaysPreparedAccent", {
 		name: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAlwaysPreparedAccent.name")}`,
 		hint: `${game.i18n.localize("TIDY5E.Settings.ColorPickerAlwaysPreparedAccent.hint")}`,
-		scope: "client",
+		scope: "global",
 		type: String,
 		default: RGBAToHexAFromColor(0, 191, 255, 1),
 		config: false
@@ -1101,7 +1101,7 @@ export function settingsList() {
 	game.settings.register(CONSTANTS.MODULE_ID, "debug", {
 		name: `TIDY5E.Settings.Debug.name`,
 		hint: `TIDY5E.Settings.Debug.hint`,
-		scope: "client",
+		scope: "global",
 		config: true,
 		default: false,
 		type: Boolean

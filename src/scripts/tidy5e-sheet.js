@@ -654,7 +654,7 @@ async function abbreviateCurrency(app, html, data) {
  */
 async function tidyCustomEffect(actor, changes) {
 	const changeMaxPreparedList = changes.find((c) => {
-		return c.key === "flags.tidy5e-sheet.maxPreparedSpells";
+		return c.key === "system.details.maxPreparedSpells";
 	});
 	if (changeMaxPreparedList) {
 		if (changeMaxPreparedList.value?.length > 0) {
@@ -707,7 +707,7 @@ async function tidyCustomEffect(actor, changes) {
 					}
 				}
 				await actor.update({
-					"flags.tidy5e-sheet.maxPreparedSpells": getProperty(actor, changeMaxPreparedList.key)
+					"system.details.maxPreparedSpells": getProperty(actor, changeMaxPreparedList.key)
 				});
 				return getProperty(actor, changeMaxPreparedList.key);
 			} else {
